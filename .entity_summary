@@ -1,0 +1,7 @@
+- Werkzeugausgabe (werkzeugausgabe): werkzeug_ref[applookup/select], mitarbeiter_ref[applookup/select], ausgabedatum[date/date], geplante_rueckgabe[date/date], projekt_baustelle[string/text], zustand_ausgabe[lookup/radio], tatsaechliche_rueckgabe[date/date], zustand_rueckgabe[lookup/radio], bemerkung_ausgabe[string/textarea]
+  → werkzeug_ref links to app_id 69cad17fbc61d7b098886b2a
+  → mitarbeiter_ref links to app_id 69cad17797a950c659be4580
+- Werkzeugkatalog (werkzeugkatalog): bezeichnung[string/text], inventarnummer[string/text], kategorie[lookup/select], hersteller[string/text], modell[string/text], seriennummer[string/text], kaufdatum[date/date], standort[string/text], zustand[lookup/radio], pruefpflichtig[bool], naechste_pruefung[date/date], bemerkung_werkzeug[string/textarea], foto_werkzeug[file]
+- Wartungs- und Prüfungsprotokoll (wartungs_und_pruefungsprotokoll): werkzeug_wartung_ref[applookup/select], datum_wartung[date/date], art_wartung[lookup/select], durchgefuehrt_von[string/text], ergebnis[lookup/radio], naechste_pruefung_datum[date/date], kosten[number], bemerkung_wartung[string/textarea], dokument_wartung[file]
+  → werkzeug_wartung_ref links to app_id 69cad17fbc61d7b098886b2a
+- Mitarbeiterverwaltung (mitarbeiterverwaltung): vorname[string/text], nachname[string/text], personalnummer[string/text], abteilung[lookup/select], telefon[string/tel], email[string/email]
